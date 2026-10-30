@@ -1,0 +1,47 @@
+<!doctype html><html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>QuarterReady – Making Tax Digital without the accounting software</title>
+<style>
+body{margin:0;font-family:system-ui,sans-serif;color:#1b1f24;line-height:1.5}
+.w{max-width:720px;margin:auto;padding:24px 18px}
+header{background:#0b3d2e;color:#fff}h1{font-size:2rem;line-height:1.15;margin:.3em 0}
+.btn{display:inline-block;background:#ffcc00;color:#000;padding:14px 22px;border-radius:8px;font-weight:700;border:0;font-size:1rem;cursor:pointer;text-decoration:none}
+form{display:flex;flex-wrap:wrap;gap:8px}input[type=email]{flex:1;min-width:200px;padding:14px;border-radius:8px;border:1px solid #999;font-size:1rem}
+ul li{margin:.4em 0}.card{background:#f3f6f4;border-radius:10px;padding:16px;margin:16px 0}
+table{width:100%;border-collapse:collapse;font-size:.9rem}td,th{border-bottom:1px solid #ddd;padding:4px;text-align:left}
+small{color:#555}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}.p{border:1px solid #ddd;border-radius:10px;padding:12px}.p img{width:100%;border-radius:6px}.pr{font-size:1.4rem;font-weight:700;margin:.2em 0}</style></head><body>
+<header><div class="w">
+<p><b>QuarterReady</b></p>
+<h1>Your bank statement, sorted for HMRC in 2 minutes.</h1>
+<p>From 6 April 2027 around 1,077,000 more sole traders and landlords must send HMRC quarterly updates (<a style="color:#ffcc00" href="https://www.gov.uk/government/news/sole-traders-and-landlords-earning-more-than-30000-urged-to-act-now">GOV.UK</a>). Drop in your bank CSV and get the totals Making Tax Digital asks for. No Xero. No retyping.</p>
+<a class="btn" href="#join">Get the free April 2027 checklist</a>
+</div></header>
+<div class="w">
+<h2>Why people are dreading it</h2>
+<p>"Doing manual data entry from your bank statement to a spreadsheet 4 times a year… is just plain tedious." – sole trader on Reddit</p>
+<ul>
+<li>✅ Every transaction sorted into HMRC's self-employed expense categories</li>
+<li>✅ Quarterly income & expense totals, ready to submit</li>
+<li>✅ Exports a clean spreadsheet that works with free HMRC-recognised bridging software</li>
+<li>✅ Runs in your browser – your bank data isn't uploaded anywhere</li>
+<li>✅ Founder price: £29 a year (normally £39) for the first 100 members</li>
+</ul>
+<div class="card"><h3>Try it now (free demo)</h3>
+<p>Choose a bank CSV with columns for date, description and amount.</p>
+<input type="file" id="f" accept=".csv"><div id="out"></div></div>
+<h2>Free MTD guides</h2><ul><li><a href="guides/mtd-for-landlords-april-2027.html">Making Tax Digital for landlords: April 2027</a></li><li><a href="guides/mtd-quarterly-update-deadlines.html">MTD for Income Tax: quarterly update deadlines</a></li><li><a href="guides/spreadsheet-for-making-tax-digital.html">Can I use a spreadsheet for Making Tax Digital?</a></li><li><a href="guides/mtd-expense-categories.html">Making Tax Digital expense categories explained</a></li><li><a href="guides/do-i-need-mtd-under-30k.html">Do I need MTD if I earn under £30,000?</a></li></ul>
+<h2 id="shop">Ready-made MTD spreadsheets</h2>
+<div class="grid">
+<div class="p"><img src="img/landlord.jpg" alt="Landlord MTD tracker mockup"><h3>UK Landlord MTD Tracker 2026-27</h3><p>Rent, expenses and quarterly totals per property, portfolio dashboard, tax estimate. Excel.</p><p class="pr">£9.99</p><a class="btn" href="https://buy.stripe.com/14A28t7Tsezg0hraSe5Vu0f">Buy now</a></div>
+<div class="p"><img src="img/sole-trader.jpg" alt="Sole trader MTD tracker mockup"><h3>UK Sole Trader MTD Tracker 2026-27</h3><p>Income, HMRC expense categories, mileage, quarterly totals. Excel.</p><p class="pr">£7.99</p><a class="btn" href="https://buy.stripe.com/3cI3cx8Xwaj02pz5xU5Vu0g">Buy now</a></div>
+<div class="p"><img src="img/bundle.jpg" alt="Bundle mockup"><h3>Bundle: Landlord + Sole Trader</h3><p>Both trackers, for people with rental and self-employed income.</p><p class="pr">£12.49</p><a class="btn" href="https://buy.stripe.com/aFacN7b5Ebn49S13pM5Vu0h">Buy the bundle</a></div></div>
+<p><a href="shop.html">See the shop →</a></p>
+<p class="dis"><small>These spreadsheets are record-keeping tools, not tax advice and not HMRC-recognised software. To submit Making Tax Digital updates you still need HMRC-compatible (e.g. bridging) software. Check all figures; speak to an accountant if unsure.</small></p>
+<h2 id="join">Get the free MTD April 2027 checklist</h2>
+<p>Plain-English, one page: dates, thresholds, what to set up now. Plus early access to QuarterReady.</p>
+<!-- TODO: replace action with MailerLite/ConvertKit free form endpoint -->
+<form action="#" method="post" onsubmit="alert('Thanks! (placeholder – connect email service)');return false">
+<input type="email" name="email" required placeholder="you@email.co.uk"><button class="btn">Send me the checklist</button></form>
+<p><small>QuarterReady is a record-sorting tool, not tax advice and not HMRC software. Check figures before submitting.</small></p>
+</div>
+<script src="app.js"></script></body></html>
