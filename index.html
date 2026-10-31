@@ -39,9 +39,8 @@ small{color:#555}
 <p class="dis"><small>These spreadsheets are record-keeping tools, not tax advice and not HMRC-recognised software. To submit Making Tax Digital updates you still need HMRC-compatible (e.g. bridging) software. Check all figures; speak to an accountant if unsure.</small></p>
 <h2 id="join">Get the free MTD April 2027 checklist</h2>
 <p>Plain-English, one page: dates, thresholds, what to set up now. Plus early access to QuarterReady.</p>
-<!-- TODO: replace action with MailerLite/ConvertKit free form endpoint -->
-<form action="#" method="post" onsubmit="alert('Thanks! (placeholder – connect email service)');return false">
-<input type="email" name="email" required placeholder="you@email.co.uk"><button class="btn">Send me the checklist</button></form>
+<form id="qr-signup" onsubmit="event.preventDefault();var f=this,m=document.getElementById('qr-msg');fetch('https://formsubmit.co/ajax/6edbaa1506954e668ad50fea6c6f1c0d',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify({email:f.email.value,_subject:'QuarterReady signup',_template:'table'})}).then(r=>r.json()).then(d=>{m.textContent=d.success==='true'?'Thanks! Your checklist is below.':'Sorry, please try again.';if(d.success==='true'){f.reset();location.href='lead-magnet.html'}}).catch(()=>{m.textContent='Sorry, please try again.'})">
+<input type="email" name="email" required placeholder="you@email.co.uk"><button class="btn">Send me the checklist</button></form><p id="qr-msg"></p>
 <p><small>QuarterReady is a record-sorting tool, not tax advice and not HMRC software. Check figures before submitting.</small></p>
 </div>
 <script src="app.js"></script></body></html>
